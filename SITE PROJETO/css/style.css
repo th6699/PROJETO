@@ -1,0 +1,354 @@
+* {
+    /* Seleciona todos os elementos */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove margens e preenchimentos padrão */
+    box-sizing: border-box;
+    /* Define o modelo de caixa para todos os elementos */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Adiciona rolagem suave ao clicar em links âncora */
+}
+
+header {
+    /* Estilo do cabeçalho */
+    background-color: #000000;
+    /* Define a cor de fundo do cabeçalho */
+    font-family: roboto, arial, sans-serif;
+    /* Define a fonte do cabeçalho */
+    color: #000000;
+    /* Define a cor do texto */
+    align-items: center;
+    /* Alinha os itens no centro */
+    height: 100px;
+    /* Define a altura do cabeçalho */
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 1.0);
+    /* Adiciona uma sombra suave */
+}
+
+header nav {
+    /* Estilo do menu de navegação */
+    float: right;
+    /* Alinha o menu de navegação à direita */
+    padding-top: 30px;
+
+    /* Adiciona espaçamento superior */
+    a {
+        padding: 20px;
+        /* Adiciona espaçamento interno */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        /* Define a fonte do link */
+        color: #000000;
+        /* Define a cor do texto */
+        color: rgb(255, 255, 255);
+        /* Define a cor do texto */
+        text-align: center;
+        /* Alinha o texto ao centro */
+        text-decoration: none;
+        /* Remove o sublinhado do link */
+        font-size: 25px;
+        /* Define o tamanho da fonte */
+        font-weight: 500;
+        /* Define o peso da fonte */
+        transition: all 0.5s ease-in-out;
+
+        /* Adiciona uma transição suave */
+        &:hover {
+            /* Efeito de hover */
+            border-radius: 50px;
+            /* Arredonda os cantos */
+            transform: scale(1.05);
+            /* Aumenta o tamanho do link */
+            background-color: #ff0202;
+            /* Altera a cor de fundo */
+
+        }
+    }
+}
+
+header img {
+    /* Estilo da imagem do cabeçalho */
+    width: 250px;
+    /* Define a largura da imagem */
+    margin-left: 20px;
+    /* Adiciona margem à esquerda */
+    padding-top: 20px;
+    /* Adiciona espaçamento superior */
+    padding-bottom: 10px;
+    /* Adiciona espaçamento inferior */
+    padding-right: 20px;
+    /* Adiciona espaçamento à direita */
+    float: left;
+    /* Alinha a imagem à esquerda */
+    height: 80px;
+    /* Define a altura da imagem */
+    border-radius: 5px;
+    /* Arredonda os cantos da imagem */
+    transition: all 0.5s ease-in-out;
+
+    /* Adiciona uma transição suave */
+    &:hover {
+        /* Efeito de hover */
+        transform: scale(1.05);
+        /* Aumenta o tamanho da imagem */
+    }
+}
+
+main {
+    margin: 20px auto;
+    /* Centraliza o conteúdo horizontalmente e adiciona margem vertical */
+    padding: 20px;
+    /* Adiciona espaçamento interno */
+    max-width: 1200px;
+    /* Define uma largura máxima para o conteúdo */
+    font-family: Arial, sans-serif;
+    /* Define a fonte do texto */
+    font-size: 18px;
+    /* Define o tamanho da fonte */
+    line-height: 1.6;
+    /* Melhora a legibilidade do texto */
+    color: #c00000;
+    /* Define a cor do texto */
+    background-color: #000000;
+    /* Define uma cor de fundo */
+    border-radius: 10px;
+    /* Arredonda os cantos */
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 1.0);
+    /* Adiciona uma sombra suave */
+}
+
+main h1 {
+    /* Estilo para o título principal */
+    font-size: 36px;
+    /* Define o tamanho da fonte do título */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
+    color: #aa0000;
+    /* Define a cor do título */
+    text-align: center;
+    /* Centraliza o título */
+}
+
+main h2 {
+    /* Estilo para subtítulos */
+    font-size: 28px;
+    /* Define o tamanho da fonte do subtítulo */
+    margin-bottom: 15px;
+    /* Adiciona margem inferior */
+    color: #aa0000;
+    /* Define a cor do subtítulo */
+    text-align: center;
+    /* Alinha o subtítulo à esquerda */
+}
+
+main p {
+    /* Estilo para parágrafos */
+    margin-bottom: 15px;
+    /* Adiciona margem inferior */
+    text-align: center;
+    /* Justifica o texto */
+}
+
+main#jogo {
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-direction: column;
+    /* Organiza os itens em uma coluna */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
+    height: 100vh;
+    /* Faz o container ocupar toda a altura da tela */
+    text-align: center;
+    /* Centraliza o texto */
+}
+main#contato {
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-direction: column;
+    /* Organiza os itens em uma coluna */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
+    height: 70vh;
+    /* Faz o container ocupar toda a altura da tela */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+main#contato a {
+    margin: 10px 0;
+    /* Adiciona espaçamento entre os botões */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+}
+
+footer {
+    /* Estilo para o rodapé da página */
+    background-color: #333;
+    /* Define a cor de fundo do rodapé */
+    color: #fff;
+    /* Define a cor do texto no rodapé */
+    text-align: center;
+    /* Centraliza o texto no rodapé */
+    padding: 20px;
+    /* Adiciona espaçamento interno ao redor do conteúdo do rodapé */
+    font-size: 14px;
+    /* Define o tamanho da fonte do texto no rodapé */
+    border-top: 2px solid #ff0202;
+    /* Adiciona uma borda superior ao rodapé */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra suave acima do rodapé */
+}
+
+footer a {
+    /* Estilo para links dentro do rodapé */
+    color: #ff0202;
+    /* Define a cor dos links no rodapé */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    transition: color 0.3s ease-in-out;
+    /* Adiciona uma transição suave ao alterar a cor dos links */
+}
+
+footer a:hover {
+    /* Estilo para links no estado de hover */
+    color: #fff;
+    /* Altera a cor dos links para branco quando o mouse passa sobre eles */
+}
+
+body {
+    /* Estilo do corpo da página */
+    background-color: #000000;
+    /* Define a cor de fundo da página */
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão da página */
+    color: #c00000;
+    /* Define a cor do texto */
+    line-height: 1.6;
+    /* Melhora a legibilidade do texto */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove preenchimentos padrão */
+    overflow-x: hidden;
+    /* Impede o deslocamento horizontal */
+}
+
+.galeria {
+    display: flex;
+    /* Exibe as imagens em linha */
+    flex-wrap: wrap;
+    /* Permite que as imagens quebrem para a próxima linha se necessário */
+    justify-content: center;
+    /* Centraliza as imagens horizontalmente */
+    gap: 10px;
+    /* Adiciona espaçamento entre as imagens */
+    margin: 20px auto;
+    /* Adiciona margem ao redor da galeria */
+    max-width: 1200px;
+    /* Define uma largura máxima para a galeria */
+}
+
+.galeria img {
+    width: 300px;
+    /* Define a largura das imagens */
+    height: auto;
+    /* Mantém a proporção original das imagens */
+    border-radius: 10px;
+    /* Adiciona cantos arredondados às imagens */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra suave às imagens */
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição suave para o efeito de hover */
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+    /* Aumenta o tamanho da imagem ao passar o mouse */
+}
+
+/* Estilo para o botão do Instagram */
+.btn-instagram {
+    display: inline-flex;
+    /* Exibe o botão como um elemento flexível em linha */
+    align-items: center;
+    /* Alinha o ícone e o texto verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    background-color: #E4405F;
+    /* Cor de fundo do botão (cor do Instagram) */
+    color: #ffffff;
+    /* Cor do texto e do ícone */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    padding: 10px 20px;
+    /* Adiciona espaçamento interno */
+    border-radius: 5px;
+    /* Arredonda os cantos do botão */
+    font-size: 16px;
+    /* Define o tamanho do texto */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    transition: background-color 0.3s ease;
+    /* Adiciona uma transição suave ao passar o mouse */
+    margin-top: 10px;
+    /* Adiciona um espaçamento superior */
+}
+
+.btn-instagram i {
+    margin-right: 8px;
+    /* Adiciona um espaçamento entre o ícone e o texto */
+    font-size: 20px;
+    /* Define o tamanho do ícone */
+}
+
+.btn-instagram:hover {
+    background-color: #C13584;
+    /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o botão de e-mail */
+.btn-email {
+    display: inline-flex;
+    /* Exibe o botão como um elemento flexível em linha */
+    align-items: center;
+    /* Alinha o ícone e o texto verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    background-color: #0078D4;
+    /* Cor de fundo do botão (azul para e-mail) */
+    color: #ffffff;
+    /* Cor do texto e do ícone */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    padding: 10px 20px;
+    /* Adiciona espaçamento interno */
+    border-radius: 5px;
+    /* Arredonda os cantos do botão */
+    font-size: 16px;
+    /* Define o tamanho do texto */
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+    transition: background-color 0.3s ease;
+    /* Adiciona uma transição suave ao passar o mouse */
+    margin-top: 10px;
+    /* Adiciona um espaçamento superior */
+}
+
+.btn-email i {
+    margin-right: 8px;
+    /* Adiciona um espaçamento entre o ícone e o texto */
+    font-size: 20px;
+    /* Define o tamanho do ícone */
+}
+
+.btn-email:hover {
+    background-color: #005A9E;
+    /* Altera a cor de fundo ao passar o mouse */
+}
